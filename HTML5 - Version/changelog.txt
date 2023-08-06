@@ -1,0 +1,51 @@
+=============================06/24/2023=============================
+
+- Added dark mode function
+- New models added: gpt-3.5-turbo-16k, gpt-4 and gpt-4-32k
+
+Modified files:
+index.html
+php/api.php
+js/app.js
+js/config.json
+style/dark-mode.css
+style/app.css
+json/employees.json
+
+=============================05/03/2023=============================
+
+- The api.php file has been corrected to handle servers that did not have cors enabled or ran out of credits on the API. Now, the code displays an error message indicating what happened.
+
+=============================04/26/2023=============================
+
+- Fixed Sarah Taylor's welcome message.
+- Made a small correction in the streamChat function to fix the display of error messages on some servers.
+
+=============================04/25/2023=============================
+
+- A problem with the cancelSpeechSynthesis function that was failing in some browsers, specifically on line 1118 of the app.js file, has been fixed.
+
+=============================04/10/2023=============================
+
+- Fix was performed on line 340 of the app.js file to correct the OpenAI error return when credits expire.
+
+=============================04/04/2023=============================
+
+- It is now possible to select the output language when writing a message to the AI, with more than 210 languages available!
+- You can choose from over 50 different writing tones for the AI.
+- It is also possible to use over 40 available writing styles to be defined in the AI.
+
+Modified files:
+index.html (New HTML block added for text outputs)
+json/lang.json (New translations field for the above block)
+style/app.css (Styling for the text output block)
+js/app.js (Logic to load the new text blocks from the lang.json file into the index)
+
+=============================04/01/2023=============================
+- The functionality to download conversations in PDF format has been implemented.
+- The issue related to special characters in German and other languages has been fixed.
+
+Modified files:
+index.html (a new html widget has been added in the list (ul) dropdown-menu with the function to download in pdf format)
+app/json (a new function was created to handle special characters in some languages ​​[formatSpecialCharactersRealTime])
+img - new icon added in /img folder (icon-download-pdf.svg)
